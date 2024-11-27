@@ -72,3 +72,12 @@
 //         this._courseCount = 4
 //     }
 // }
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let data = 'hello typescript!!';
+            resolve(data);
+        }, 1000);
+    });
+}
+fetchData().then(message => console.log(message));
